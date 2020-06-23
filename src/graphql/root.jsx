@@ -151,6 +151,8 @@ const Root = new GraphQLObjectType({
         return return_data.reduce((acc, val) => acc.concat(val), []);
       },
     },
+
+
     actions_near: {
       args: {
         lat: {
@@ -292,12 +294,12 @@ timePeriod: {
       },
     },
 
-getTone: {
+Tone: {
  	args: {
 	  avgTone_min: {
 		type: GraphQLInt,
 		 },
-	 avgTone_max: {
+	avgTone_max: {
 		type: GraphQLInt,
 		 },
 	       },			
